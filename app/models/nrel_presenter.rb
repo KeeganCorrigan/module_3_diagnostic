@@ -9,7 +9,6 @@ class NrelPresenter
     end
   end
 
-
   private
 
   def service(params)
