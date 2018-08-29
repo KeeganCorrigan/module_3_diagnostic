@@ -18,7 +18,7 @@ describe Station, type: :model do
     station = Station.new(station_data)
 
     expect(station.name).to eq(station_data[:station_name])
-    expect(station.address).to eq(station_data[:street_address])
+    expect(station.address).to eq(station_data[:street_address] + " " + station_data[:city] + " " + station_data[:state] + " " + station_data[:zip])
     expect(station.fuel_types).to eq(station_data[:fuel_type_code])
     expect(station.distance).to eq(station_data[:distance])
     expect(station.access_times).to eq(station_data[:access_days_time])

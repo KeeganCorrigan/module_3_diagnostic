@@ -3,7 +3,7 @@ class Station
 
   def initialize(data)
     @name = data[:station_name]
-    @address = data[:street_address]
+    @address = data[:street_address] + " " + data[:city] + " " + data[:state] + " " + data[:zip]
     @fuel_types = data[:fuel_type_code]
     @distance = data[:distance]
     @access_times = data[:access_days_time]
