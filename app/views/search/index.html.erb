@@ -1,0 +1,11 @@
+
+
+<% @stations.each do |station| %>
+  <div class="station">
+    <%= station.name %>
+    <%= station.address %>
+    <%= station.feul_types %>
+    <%= station.distance %>
+    <%= station.access_times %>
+  </div>
+<% end %>
