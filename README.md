@@ -23,3 +23,5 @@ And for each of the stations I should see Name, Address, Fuel Types, Distance, a
 https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/
 
 ```
+
+https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?fuel_type=LPG,ELEC&location=80203&limit=10&api_key=fxoT3RSpBaRGvRIrtQXywpB3eRLaKSKl6asyzNZ8
