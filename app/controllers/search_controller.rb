@@ -5,5 +5,7 @@ class SearchController < ApplicationController
     @stations = @stations[:fuel_stations].map do |station_data|
       Station.new(station_data)
     end
+
+    
   end
 end
