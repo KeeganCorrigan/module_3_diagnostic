@@ -1,6 +1,6 @@
 class NrelService
   def initialize(zip_code)
-    @api_key = "fxoT3RSpBaRGvRIrtQXywpB3eRLaKSKl6asyzNZ8"
+    @api_key = ENV["NREL_KEY"]
     @zip_code = zip_code
     @conn = Faraday.new(:url => "https://developer.nrel.gov")
   end
