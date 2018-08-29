@@ -4,8 +4,6 @@ class SearchController < ApplicationController
 
     @stations = JSON.parse(response.body, symbolize_names: true)[:fuel_stations]
 
-    binding.pry
-
     @stations = @stations.map do |station_data|
       Station.new(station_data)
     end

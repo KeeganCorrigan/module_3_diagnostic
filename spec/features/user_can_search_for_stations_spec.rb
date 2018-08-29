@@ -16,12 +16,10 @@ describe "a user" do
 
       expect(page).to have_css(".station", count: 10)
 
-      # TODO: test that ONLY electric and propane stations are coming through
-
       within(first(".station")) do
   			expect(page).to have_css(".name")
   			expect(page).to have_css(".address")
-  			expect(page).to have_css(".feul_types")
+  			expect(page).to have_css(".fuel_types")
   			expect(page).to have_css(".distance")
         expect(page).to have_css(".access_times")
   		end
