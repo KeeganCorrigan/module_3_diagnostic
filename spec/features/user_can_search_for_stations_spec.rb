@@ -16,6 +16,12 @@ describe "a user" do
 
       expect(page).to have_css(".station", count: 10)
 
+      expect(page).to_not have_content("BD")
+      expect(page).to_not have_content("CNG")
+      expect(page).to_not have_content("E85")
+      expect(page).to_not have_content("HY")
+      expect(page).to_not have_content("LNG")
+
       within(first(".station")) do
   			expect(page).to have_css(".name")
   			expect(page).to have_css(".address")
