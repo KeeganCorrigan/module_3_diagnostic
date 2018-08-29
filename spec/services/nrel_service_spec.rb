@@ -13,13 +13,13 @@ describe NrelService do
         service = NrelService.new("80203")
 				result = service.alt_fuel_stations_by_zip_code_location
 
-				expect(result).to be_a(Array)
+				expect(result).to be_a(Hash)
 
-				expect(result.first).to have_key(:station_name)
-        expect(result.first).to have_key(:fuel_type_code)
-				expect(result.first).to have_key(:street_address)
-				expect(result.first).to have_key(:distance)
-				expect(result.first).to have_key(:access_days_time)
+				expect(result[:fuel_stations].first).to have_key(:station_name)
+        expect(result[:fuel_stations].first).to have_key(:fuel_type_code)
+				expect(result[:fuel_stations].first).to have_key(:street_address)
+				expect(result[:fuel_stations].first).to have_key(:distance)
+				expect(result[:fuel_stations].first).to have_key(:access_days_time)
 			end
 		end
 	end
